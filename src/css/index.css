@@ -1,0 +1,377 @@
+.back-to-top{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border:1px solid #999;
+    border-radius:5px;
+    color: #000;
+    text-align: center;
+}
+/*===========================header style start==================================*/
+header{}
+
+/*导航栏样式*/
+header .navbar{
+    padding: 10px;
+    background: rgba(255, 255, 255, 1);
+}
+header .navbar .fa{
+    margin-right: 10px;
+}
+header .navbar .navbar-header .collapsed{
+    background: #f8f8f8;
+}
+header .navbar .navbar-header .logo{
+    font-size: 30px;
+    color: #ea705c;
+}
+header .navbar .navbar-nav li{
+    margin-right: 30px;
+}
+header .navbar .navbar-nav li a{
+    font-size: 18px;
+}
+
+header .navbar .navbar-nav-1 li a.active{
+    color: #ea705c;
+}
+header .navbar .navbar-form .search{
+    background: #f8f8f8;
+    box-shadow: none;
+    border:none;
+    border-radius:35px;
+    transition: all 0.5s;
+}
+header .navbar .navbar-form .search:focus{
+    background: #999;
+}
+header .navbar .navbar-nav-2{
+    position:absolute;
+    right: 10%;
+}
+header .navbar .navbar-nav-2 .login-btn{
+    cursor: pointer;
+}
+header .navbar .navbar-nav-2 .signup-btn{
+    padding:8px 20px;
+    margin-top: 5px;
+    border-color:#ea705c;
+    color: #ec6149;
+}
+header .navbar .navbar-nav-2 .signup-btn:hover{
+    background: rgba(236, 97, 73, .1);
+    color: #ea705c;
+}
+header .navbar .navbar-nav-2 .write-btn{
+     padding:8px 20px;
+    margin-top: 5px;
+    border-color:#ea705c;
+    background: #ea705c;
+    color: #fff;
+}
+header .navbar .navbar-nav-2 .write-btn:hover{
+    background: #ec6149;
+    color: #fff;
+}
+
+/*模态框样式*/
+
+header .modal .modal-header .modal-title{
+    position: relative;
+}
+header .modal .modal-header .modal-title .btn{
+    margin: 0 5px;
+    background: transparent;
+     border-bottom:2px solid transparent;
+     outline: none;
+     color: #999;
+     font-size: 18px;
+     border-radius:0;
+     box-shadow: none;
+}
+header .modal .modal-header .modal-title .btn.active,
+header .modal .modal-header .modal-title .btn:hover{
+    border-bottom-color:  #ea705c;
+    color: #ea705c;
+}
+header .modal .modal-header .modal-title span{
+    position: absolute;
+    left: 49%;
+    top: 7px;
+    color: #999;
+}
+
+header .modal form .form-group input{
+    box-shadow: none;
+    outline: none;
+    text-indent: 1em;
+}
+header .modal form .form-group .fa{
+    float: left;
+    margin-top: -25px;
+    margin-left: 10px;
+    color: #999;
+}
+header .modal form .form-group input[type=text]{
+    border-bottom:none;
+}
+header .modal form .btn{
+    width: 100%;
+    margin-top: 20px;
+}
+  header .modal  p{
+      padding: 20px 20px 0;
+      font-size: 13px;
+      color: #999;
+  }
+header .modal p a{
+    font-size: 13px;
+}
+
+
+
+header .modal .dropdown{
+    margin-top: -95px;
+}
+header .modal .dropdown .dropdown-toggle{
+    color: #999;
+    text-decoration: none;
+}
+header .modal .dropdown .dropdown-toggle:hover{
+    color: #000;
+}
+header .modal .modal-footer{
+    position: relative;
+}
+header .modal .modal-footer span{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    padding: 0 10px;
+    background: #fff;
+    color: #999;
+    transform: translateX(-50%);
+}
+header .modal .modal-footer .other-account{
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+    margin-top: 20px;
+    list-style: none;
+    text-align: center;
+}
+header .modal .modal-footer .other-account li{
+    border-radius:25px;
+    background: #999;
+}
+header .modal .modal-footer .other-account li a{
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    border-radius:25px;
+    background: #999;
+    display: inline-block;
+     color: #fff;
+}
+header .modal .modal-footer .other-account li .weibo{
+    background: #e05244;
+}
+header .modal .modal-footer .other-account li .weixin{
+    background: #00bb29;
+}
+header .modal .modal-footer .other-account li .qq{
+    background: #498ad5;
+}
+/*===========================header style end==================================*/
+
+
+
+/*===========================main style start==================================*/
+main{
+    margin-top: 70px;
+}
+main .slide .carousel-inner .item img{
+    position: relative;
+    width: 100%;
+}
+main .slide .carousel-control {
+    background: none;
+    cursor: pointer;
+}
+main .slide .carousel-control .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0,.6);
+    transform: translate(-50%,-50%);
+}
+
+/*article*/
+main article,main aside{
+    margin-top: 20px;
+}
+main article .tags{
+    border-bottom: 1px solid #999;
+}
+main article .tags a{
+    display: inline-block;
+   min-height:32px;
+   margin: 0 18px 18px 0;
+    border:1px solid #999;
+    border-radius: 5px;
+    color: #999;
+    text-decoration: none;
+}
+main article .tags a img{
+    width: 32px;
+}
+main article .tags a span{
+    padding: 0 10px;
+}
+main article .tags .tag-more{
+    border:none;
+}
+main article .note-list .note-box{
+    position: relative;
+}
+main article .note-list{
+    list-style: none;
+    padding-left: 0;
+    padding-top: 20px;
+}
+main article .note-list .note-box .wrap-img img{
+    position: absolute;
+    right: 0;
+    /*top:50%;*/
+    width: 100px;
+    height: 100px;
+}
+main article .note-list .note-box .header-img img{
+    width: 32px;
+    height: 32px;
+}
+main article .note-list .note-box .title{
+    display: inline-block;
+    padding: 10px 0;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+}
+main article .note-list .note-box .content{
+    width: 350px;
+}
+main article .note-more{
+    width: 100%;
+    border:none;
+    background: #999;
+    font-size: 18px;
+    color: #fff;
+    /*text-align: center;*/
+}
+main article .note-more:hover{
+    background: #998;
+}
+
+
+/*aside*/
+main aside .list-group li{
+    border: none;
+}
+main aside .list-group li img{
+    width: 100%;
+}
+main aside .download{
+    position: relative;
+    margin-bottom: 20px;
+}
+main aside .download a img{
+     width: 100%;
+     height: auto;
+}
+main aside .download .btn-group{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+}
+main aside .download .btn-group .btn{
+    margin: 0 5px;
+    color: #fff;
+}
+main aside .download .btn-group .qr-btn{
+    background: #999;
+}
+
+main aside .download .btn-group .apple-btn{
+    background: #6ba1e0;
+}
+main aside .download .btn-group .android-btn{
+    background: #7caf49;
+}
+main aside .writer{
+    margin: 10px 0;
+}
+main aside .writer img{
+    /*display: inline-block;*/
+    width: 32px;
+    height: 32px;
+    margin: 10px 10px 0 0 ;
+}
+main aside .writer  .writer-item{
+    width: 100%;
+    padding: 10px 0;
+}
+main aside .writer  .writer-item .name h5{
+    /*margin-top: 20px;*/
+    font-weight: bold;
+}
+main aside .writer  .writer-item  .fllow{
+    margin-top: -20px;
+    color: green;
+}
+main aside .writer .writer-item  p{
+    margin: 0 0 30px 0;
+    font-size: 15px;
+    color: #998;
+}
+main aside .writer .writer-item p span{
+    margin: 0 2px;
+    font-size: 15px;
+    color: #998;
+}
+
+/*===========================main style end==================================*/
+
+
+
+
+/*===========================footer style start==================================*/
+footer{
+        padding: 30px 0;
+}
+footer .footer-content{
+    padding-right: 0;
+    font-size: 13px;
+    color: #969696;
+}
+footer .footer-content a{
+        color: #969696;
+    display: inline-block;
+}
+footer .footer-content .icp{
+    margin-top: 10px;
+    font-size: 12px;
+    color: #c8c8c8;
+}
+footer .footer-content .icp a{
+        color: #c8c8c8;
+}
+footer .footer-content .icp a img{
+    width: 60px;
+    vertical-align: middle;
+}
+
+/*===========================footer style end==================================*/

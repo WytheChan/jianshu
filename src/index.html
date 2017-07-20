@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="css/reset.css">-->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <header id="top">
+        <!--顶部导航栏-->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="navbar-header col-md-offset-1">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#" class="navbar-brand logo ">简书</a>
+                    </div>
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="mobile">
+                            <ul class="nav navbar-nav navbar-nav-1">
+                                <li class="text-center">
+                                    <a class="active" href="#"><i class="fa fa-home"></i>首页</a>
+                                </li>
+                                <li class="text-center">
+                                    <a href="#"><i class="fa fa-download"></i>下载APP</a>
+                                </li>
+                            </ul>
+                            <form action="/" class="navbar-form navbar-left">
+                                <div class="form-group has-feedback">
+                                    <input type="text" class="form-control search" placeholder="搜索">
+                                    <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                </div>
+                            </form>
+                            <ul class="nav navbar-nav navbar-nav-2">
+                                <li><a class="style-btn"> <i class="fa fa-font"></i></a></li>
+                                <li><a class="login-btn" data-toggle="modal" data-target="#login-box">登录</a></li>
+                                <li><a class="btn btn-default signup-btn " data-toggle="modal" data-target="#signup-box">注册</a></li>
+                                <li><a class="btn btn-default write-btn"><i class="fa fa-pencil"></i>写文章</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!--登录、注册的模态框-->
+        <div class="modal" id="login-box">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                        <div class="modal-title btn-group">
+                            <button type="button" class="btn btn-defautl active" data-dismiss="modal" data-toggle="modal" data-target="#login-box">登录</button>
+                            <span class="text-center">•</span>
+                            <button type="button" class="btn btn-defautl" data-dismiss="modal" data-toggle="modal" data-target="#signup-box">注册</button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/">
+                            <div class="form-group has-feeback">
+                                <input type="text" class="form-control login-username" placeholder="手机号或邮箱">
+                                <i class="fa fa-user user"></i>
+                                <input type="password" class="form-control login-password" placeholder="密码">
+                                <i class="fa fa-lock  lock"></i>
+                            </div>
+                            <div class="checkbox">
+                                <label for="checkbox">
+                                    <input type="checkbox" id="checkbox" checked>记住我
+                                </label>
+                            </div>
+                            <button class="btn btn-lg btn-primary" type="button">登录</button>
+                        </form>
+                        <div class="dropdown pull-right">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">登录遇到问题？</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">用手机号重置密码</a></li>
+                                <li><a href="#">用邮箱重置密码</a></li>
+                                <li><a href="#">无法用海外手机号登录</a></li>
+                                <li><a href="#">无法用Goole帐号登录</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <span>社交帐号登录</span>
+                        <ul class="other-account">
+                            <li><a class="weibo" href="#"><i class="fa fa-weibo fa-2x"></i></a></li>
+                            <li><a class="weixin" href="#"><i class="fa fa-weixin fa-2x"></i></a></li>
+                            <li><a class="qq" href="#"><i class="fa fa-qq fa-2x"></i></a></li>
+                            <li><a class="other" href="#">其它</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="signup-box">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <button class="close" data-dismiss="modal"><span>&times;</span></button>
+                        <div class="modal-title btn-group">
+                            <button type="button" class="btn btn-defautl " data-dismiss="modal" data-toggle="modal" data-target="#login-box">登录</button>
+                            <span class="text-center">•</span>
+                            <button type="button" class="btn btn-defautl  active" data-dismiss="modal" data-toggle="modal" data-target="#signup-box">注册</button>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/">
+                            <div class="form-group has-feeback">
+                                <input type="text" class="form-control signup-username" placeholder="你的昵称">
+                                <i class="fa fa-user user"></i>
+                                <input type="text" class="form-control signup-phone" placeholder="手机号">
+                                <i class="fa fa-mobile phone"></i>
+                                <input type="password" class="form-control signup-password" placeholder="密码">
+                                <i class="fa fa-lock  lock"></i>
+                            </div>
+
+                            <button class="btn btn-lg btn-success" type="button">注册</button>
+                        </form>
+                        <p>点击 “注册” 即表示您同意并愿意遵守简书 <a href="#">用户协议</a> 和 <a href="#">隐私政策</a> </p>
+                    </div>
+                    <div class="modal-footer">
+                        <span>社交帐号注册</span>
+                        <ul class="other-account">
+                            <li><a class="weibo" href="#"><i class="fa fa-weibo fa-2x"></i></a></li>
+                            <li><a class="weixin" href="#"><i class="fa fa-weixin fa-2x"></i></a></li>
+                            <li><a class="qq" href="#"><i class="fa fa-qq fa-2x"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+            <section class="slide">
+                <div id="slide" class="carousel slide" data-ride="carousel">
+
+                </div>
+            </section>
+
+            <div class="row">
+                <div class="col-md-7">
+                    <article>
+                        <section class="tags" id="tags">
+
+                        </section>
+
+                        <ul class="note-list" id="note">
+
+
+                        </ul>
+                        <a class="note-more btn btn-default">加载更多</a>
+                    </article>
+
+                </div>
+                <div class="col-md-4 pull-right">
+                    <aside>
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="#"><img src="img/img-2.png" alt=""></a></li>
+                            <li class="list-group-item"><a href="#"><img src="img/img-3.png" alt=""></a></li>
+                            <li class="list-group-item"><a href="#"><img src="img/img-4.png" alt=""></a></li>
+                            <li class="list-group-item"><a href="#"><img src="img/img-5.png" alt=""></a></li>
+                            <li class="list-group-item"><a href="#"><img src="img/img-6.png" alt=""></a></li>
+                        </ul>
+                        <div class="download">
+                            <a href="#"><img src="img/img-7.png" alt=""></a>
+                            <div class="btn-group">
+                                <button class="btn btn-default btn-lg qr-btn" data-placement="top" data-html="true" data-trigger="hover" data-toggle="popover"
+                                    data-content="<img src='img/qrcode.jpg' />"><i class="fa fa-qrcode"></i>扫码</button>
+                                <button class="btn btn-default btn-lg apple-btn"><i class="fa fa-apple"></i>扫码</button>
+                                <button class="btn btn-default btn-lg android-btn"><i class="fa fa-android"></i>扫码</button>
+                            </div>
+                        </div>
+                        <div class="writer">
+                            <div class="title">
+                                <span>推荐作者</span>
+                                <div class="pull-right">
+                                    <span>1</span>/<span>42</span>
+                                    <ul class="btn-group">
+                                        <li class="btn btn-xs btn-default"><i class="fa fa-angle-left"></i></li>
+                                        <li class="btn btn-xs btn-default"><i class="fa fa-angle-right"></i></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="writer-item" id="writer">
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="container">
+        <div class="row">
+            <div class="col-md-7 footer-content">
+                <a href="#">关于简书</a>
+                <em> · </em>
+                <a href="#">联系我们</a>
+                <em> · </em>
+                <a href="#">加入我们</a>
+                <em> · </em>
+                <a href="#">作者成书计划</a>
+                <em> · </em>
+                <a href="#">品牌与徽标</a>
+                <em> · </em>
+                <a href="#">帮助中心</a>
+                <em> · </em>
+                <a href="#">合作伙伴</a>
+                <div class="icp">
+                    ©2012-2017 上海佰集信息科技有限公司 / Tel:021-61995350 / 简书 / 沪ICP备11018329号-5 /
+                    <a href="#">沪公网安备31010602000064号</a>
+                    <a href="#">
+                        <img src="img/v.png" alt="Smrz" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#top" class="back-to-top" data-toggle="tooltip" data-placement="left" title="回到顶部"><i class="fa fa-angle-up fa-3x"></i> </a>
+
+    <!--<div class="global-loading text-center">
+        <i class="fa fa-refresh fa-spin fa-3x"></i>
+        <p>正在加载中...</p>
+    </div>-->
+
+
+    <script type="text/html" id="slide_tem">
+        <div class="carousel-inner">
+            {{each sliders item index}}
+            <div class="item {{if index===0}}active{{/if}}"><img src="{{item.sliderUrl}}" alt=""></div>
+            {{/each}}
+            <a class="left carousel-control" href="#slide" data-target="#slide" data-slide="prev">
+                    <i class="fa fa-angle-left fa-2x"></i>
+                </a>
+            <a class="right carousel-control" href="#slide" data-target="#slide" data-slide="next">
+                    <i class="fa fa-angle-right fa-2x"></i>                    
+                </a>
+    </script>
+    <script id="tag_tem" type="text/html">
+        {{each topics item index}}
+        <a class="tag-item" href="#">
+            <img src="{{item.tagsUrl}}" alt="">
+            <span>{{item.title}}</span>
+        </a> {{/each}}
+    </script>
+    <script id="note_tem" type="text/html">
+        {{each note item index}}
+        <li class="note-box">
+            <a href="#" class="wrap-img"><img src="{{item.noteUrl_1}}" alt=""></a>
+            <div class="author">
+                <a href="#" class="header-img"><img class="img-circle" src="{{item.noteUrl_2}}" alt=""></a>
+                <span class="name">{{item.name}}</span>
+                <time>{{item.time}}</time>
+            </div>
+            <a href="#" class="title">{{item.title}}</a>
+            <p class="content">{{item.text}}</p>
+        </li>
+        <hr> {{/each}}
+    </script>
+    <script id="writer_tem" type="text/html">
+        {{each writer item index}}
+        <img class="img-circle pull-left" src="{{item.noteUrl_1}}" alt="">
+        <div class="name ">
+            <h5 class="">{{item.title}}</h5>
+            <a href="#" class="fllow pull-right">+关注</a>
+
+        </div>
+        <p>写了<span>{{item.num_1}}</span>k·<span>{{item.num_2}}</span>k喜欢</p>
+        {{/each}}
+    </script>
+    <script src="js/lib/require.js" data-main="js/index.js"></script>
+    <script src="js/config.js"></script>
+</body>
+
+</html>
